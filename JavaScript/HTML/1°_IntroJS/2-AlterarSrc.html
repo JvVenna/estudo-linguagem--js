@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0%;
+        margin: 0%;
+        text-decoration: none;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background: rgb(25, 25, 25);
+    }
+
+    h1 {
+        color: white;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin: 5vw;
+        font-size: 4vw;
+    }
+
+    img {
+        height: 50vh;
+        width:min-content;
+    }
+
+    button {
+        cursor: pointer;
+        margin: 2vw;
+        padding: 1em;
+        border-radius: 10px;
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border: transparent;
+    }
+</style>
+
+<body>
+    <h1>Nesse segundo exemplo será alterado a imagem</h1>
+    <div><img id="lampada" src="/JavaScript/Utilitários/img/lampadaLigada.jpg" alt="Lampada">
+    </div>
+    <div>
+        <button onclick="document.getElementById('lampada').src='/JavaScript/Utilitários/img/lampadaLigada.jpg'">Ligue a
+            lampada</button>
+        <button
+            onclick="document.getElementById('lampada').src='/JavaScript/Utilitários/img/lampadaDesligada.jpg'">Desligue
+            a
+            lampada</button>
+        <button
+            onclick="document.getElementById('lampada').src='/JavaScript/Utilitários/img/lampadaSemiligada.jpg'">Meio
+            Termo</button>
+    </div>
+</body>
+
+</html>

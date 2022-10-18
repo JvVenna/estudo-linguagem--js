@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {justify-content: center;
+        text-align: center;
+        background: linear-gradient(180.07deg, #000000 3.08%, #323232 99.94%);
+background-repeat: no-repeat;
+color: white;
+    }
+
+    h1 {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    h2, h3 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 500;
+    }
+    ig {
+        width: 90%;
+    }
+p {
+    color: aqua;
+}
+</style>
+<body>
+    <h1>Nesse quarto exemplo o texto abaixo será escondido</h1>
+    <button onclick="document.getElementById('demo').style.display='none'">Feche o parágrafo</button>
+    <button onclick="document.getElementById('demo').style.display='block'">Reabra o parágrafo</button>
+    <button onclick="document.getElementById('demo').style.visibility='hidden'">Esconda o parágrafo</button>
+    <button onclick="document.getElementById('demo').style.visibility='visible'">Reexiba o parágrafo</button>
+    <div id="demo" style="background-color: aqua;color: black;height: 5em;">Olá, eu sou um simples parágrafo em HTML
+    </div>
+    <h2>Conteudo abaixo</h3>
+    <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt omnis eligendi voluptates laborum! Cupiditate
+        quas rem sit, reprehenderit temporibus harum dolorem repudiandae! Dignissimos sed dolorem suscipit odit quaerat
+        eos maiores.</h3>
+</body>
+
+</html>
