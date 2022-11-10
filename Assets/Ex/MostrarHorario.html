@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Olá aqui está um novo script</h2>
+    <button id="data">qual a data de hoje?</button>
+    <p id="demo">Aqui estará a data e a hora de hoje</p>
+    <p id="demo2">Aqui estará o mes</p>
+</body>
+
+<script>
+    var btndata = document.getElementById('data');
+    var texto = document.querySelector('#demo');
+    var texto2 = document.querySelector('#demo2');
+
+    btndata.addEventListener('click', lookdate)
+
+    function lookdate() {
+
+        texto.innerHTML = '<mark>' + Date() + '</mark><br>';
+        texto2.innerHTML = getMonth();
+    }
+
+
+</script>
+
+</html>

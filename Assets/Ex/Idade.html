@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Calculo idade</h1>
+    </header>
+    <main>
+        <button id="idade">calcule a idade</button>
+        <p id="demo">Aqui estará a sua idade</p>
+        <button id="init">Inicie Aqui</button>
+    </main>
+
+</body>
+<script>
+
+    var idade = document.querySelector('#idade');
+    var texto = document.querySelector('#demo');
+    var init = document.querySelector('#init');
+
+    init.addEventListener('click', iniciar)
+    idade.addEventListener('click', calculo);
+
+    function iniciar() {
+        let anoNasc = (Number(prompt('Qual ano você nasceu?')))
+    }
+
+    function calculo(anoNasc) {
+        texto.innerHTML = 2022 - anoNasc;
+    }
+
+
+
+</script>
+
+</html>

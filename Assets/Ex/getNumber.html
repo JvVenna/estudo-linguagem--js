@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>digite um numero aleatório</h1>
+    <button id="init">Inicie</button>
+    <p id="demo">Digite um número de 1 à 10</p>
+</body>
+<script>
+    var n = Math.floor/* Escolher inteiro */(Math.random() * 10 /* escolher de 0 á 10 */);
+    var init = document.getElementById('init');
+    var texto = document.getElementById('demo');
+
+
+    init.addEventListener('click', iniciar);
+
+    function calculo() {
+    }
+
+    function iniciar() {
+
+        var numero = (Number(prompt('Digite o número:')));
+        var caso = String;
+
+        if (n == numero) { caso = 'Parabéns, acertou' }
+        else { caso = 'Errou meu patrão' }
+
+        texto.innerHTML = `O número que você escolheu: <b> ${numero} </b> <br> número sorteado <b>${n}</b><mark> ${caso}</mark>`
+
+    }
+
+
+</script>
+
+</html>

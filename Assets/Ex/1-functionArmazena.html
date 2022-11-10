@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="clique()">Clique para começar</button>
+
+    <button onclick="funcao()">Clique aqui para iniciar</button>
+    <p id="demo">A resposta aparecerá aqui</p>
+
+    <h1>Calculos matematicos</h1>
+    <p id="demo">O RESULTADO FINAL ESTARA AQUI!</p>
+    <button onclick="funcao()">Clique aqui para iniciar</button>
+
+    <h1>Média Alunos</h1>
+    <p id="demo">O Resultado estará aqui...</p>
+    <button onclick="funcao()">Clique aqui para iniciar</button>
+
+    <body>
+        <p id="demo1">Parágrafo um, comece a clicar...</p>
+        <button onclick="registro1()">Registro clique 1</button>
+        <p id="demo2">Parágrafo dois, comece a clicar...</p>
+        <button onclick="registro2()">Registro clique 2</button>
+        <p id="demo3">Parágrafo três, comece a clicar...</p>
+        <button onclick="registro3()">Registro clique 3</button>
+        <button onclick="zerar()">Zerar</button>
+
+
+        <button onclick="start()">Comece aqui</button>
+        <p id="demo">O maior número aparecerá aqui...</p>
+
+
+    </body>
+    <script>
+
+        function funcao() {
+
+            alert('Seja bem vindo ao meu site')
+
+            var num = prompt('Digite um número');
+
+            document.querySelector('#demo').innerHTML = `O dobro de ${num} <br> é ${num * 2} <br> e metade ${num / 2} `;
+        }
+        function clique() {
+
+            var nome = prompt("Digite seu nome:");
+            alert(`Olá, ${nome}! Como vai?`)
+
+        }
+
+        function funcao() {
+
+            var num1 = Number(prompt("digite o primeiro numero"))
+
+            var num2 = Number(prompt("digite o segundo numero"))
+
+            document.querySelector('#demo').innerHTML = `a soma de ${num1} ${num2} é: ${num1 + num2}`;
+
+        }
+
+
+        function funcao() {
+            var nome = prompt("Qual nome do aluno:")
+
+            var num1 = Number(prompt(`digite a 1° nota de ${nome}`))
+
+            var num2 = Number(prompt(`${nome} teve a nota ${num1} digite a segunda nota`))
+
+            var soma = num1 + num2;
+
+            document.querySelector('#demo').innerHTML = `Calculando a média de ${nome}... <br>As notas obtidas foram <mark>${num1}</mark> e <mark>${num2}</mark> <br>A média é <mark>${soma / 2}<mark>`;
+
+        }
+
+
+
+
+        function registro1() {
+            document.querySelector('#demo1').innerHTML = "Você clicou no botão 01"
+        }
+        function registro2() {
+            document.querySelector('#demo2').innerHTML = "Você clicou no botão 02"
+        }
+        function registro3() {
+            document.querySelector('#demo3').innerHTML = "Você clicou no botão 03"
+        }
+        function zerar() {
+            document.querySelector('#demo1', '#demo2', '#demo3').innerHTML = "Paragrafo limpo. Comece a clicar..."
+        }
+
+
+        function start() {
+
+            var n1 = Number(prompt('Digite um número:'))
+            var n2 = Number(prompt('Digite outro número:'))
+
+            if (n1 >= n2) {
+                document.getElementById('demo').innerHTML = `Entre <b>${n1}</b> e <b>${n2}</b> o maior é: <mark>${n1}</mark>`;
+            }
+            else {
+                document.getElementById('demo').innerHTML = `Entre <b>${n1}</b> e <b>${n2}</b> o maior é: <mark>${n2}</mark>`;
+            }
+        }
+    </script>
+
+
+
+</html>

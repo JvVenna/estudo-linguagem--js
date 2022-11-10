@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="script.js"></script>
+    <title>Lampada</title>
+</head>
+<style>
+    header,
+    main,
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    img {
+        width: 40%;
+        padding: 2rem 0;
+        cursor: pointer;
+    }
+
+    button {
+        text-align: center;
+        padding: 1em;
+        border-radius: 2em;
+        width: 10em;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <header>
+        <h1>VANILLA JS</h1>
+    </header>
+    <main>
+        <div>
+            <img src="/Assets/Utilitarios/IMG/lamp.png" alt="imagem lampada" id="lamp">
+        </div>
+        <div>
+            <button id="turnOn">Ligar</button>
+            <button id="turnOff">Desligar</button>
+        </div>
+    </main>
+</body>
+<script>
+
+    const turnOn = document.getElementById('turnOn');
+    const turnOff = document.getElementById('turnOff');
+    const lamp = document.getElementById('lamp');
+
+    const broken = "img/quebrada.png";
+
+    turnOn.addEventListener('click', lampOn);
+    turnOff.addEventListener('click', lampOff);
+    lamp.addEventListener('mouseover', lampOn);
+    lamp.addEventListener('mouseleave', lampOff);
+    lamp.addEventListener('dblclick', lampBroken);
+
+    function lampOn() {
+        if (lamp.src == broken) {
+            lamp.src.broken
+        } else {
+            lamp.src = '/Assets/Utilitarios/IMG/lampLigada.png'
+        }
+    }
+
+    function lampOff() {
+        if (lamp.src == broken) {
+            lamp.src.broken
+        } else {
+            lamp.src = '/Assets/Utilitarios/IMG/lamp.png';
+        }
+    }
+
+    function lampBroken() {
+
+        lamp.src = '/Assets/Utilitarios/IMG/quebrada.png';
+    }
+
+    function isLampBroken() {
+
+        return lamp.src.indexOf = ('quebrada') > -1
+
+    }
+
+</script>
+
+</html>

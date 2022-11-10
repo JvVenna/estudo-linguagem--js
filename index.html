@@ -1,91 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estudos do João</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Assets/style.css">
+        <link rel="shortcut icon" href="/Assets/Utilitarios/IMG/logo.ico" type="image/x-icon">
+        <title>Exc - João</title>
 </head>
 <style>
-    @font-face {
-        font-family: quicksand;
-        src: url(/EstudoLinguagem/Fontes/quicksand/Quicksand-Light.otf);
-    }
+        h1 {
+                text-align: center;
+                padding: 2em 0;
+                font-family: montserifbold;
+                font-size: 3em;
+        }
+label{color: royalblue;}
+        div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: rgb(34, 34, 34);
+                box-shadow: 0px 2px 5px 0.5px black;
+                border: 1px solid black;
+                width: 50%;
+                height: 50vh;
+                padding: 2em;
+                border-radius: 10px;
+        }
 
-    @font-face {
-        font-family: sansation;
-        src: url(/EstudoLinguagem/Fontes/sansation/Sansation_Light.ttf);
-    }
+        button {
+                padding: 2rem;
+                border-radius: 30px;
+                font-size: 1.8rem;
+        }
 
-    body {
-        margin: 0;
-        padding: 3em 0 0 0;
-        background:rgb(39, 39, 39);
-        text-align: center;
-        color: white;
-    }
+        a {
+                color: black;
+                font-family: josefinsansbold;
+        }
 
-    .logo {
-        font-family: quicksand;
-        font-size: 1.5em;
-        font-weight: bold;
-    }
-
-    .optionMenu {
-        font-family: sansation;
-        font-weight: bold;
-    }
-
-    nav {
-        background-color: rgba(0, 0, 0, 0.5);
-        position: fixed;
-        width: 100%;
-        top: 0;
-        display: flex;
-        justify-content: space-between;
-        padding: 1em 1em 0 1em;
-    }
-
-    h1 {
-        font-family: quicksand;
-        color: rgb(255, 255, 255);
-    }
-
-    .eu {
-        width: 20%;
-        border-radius: 5px;
-    }
-
-    .lineOne,
-    .lineTwo,
-    .lineThree {
-        font-family: sansation;
-        color: antiquewhite;
-        font-size: 1.2em;
-    }
-
-    .cachorro {
-        width: 50%;
-    }
-
-    .titleBox {}
+        button:hover {
+                transform: translateY(-2px);
+                opacity: 0.8;
+        }
 </style>
 
 <body>
-    <nav>
-        <div class="logo">JoãoEstudos</div>
-        <div class="optionMenu">Exercícios</div>
-    </nav>
-    <h1>Olá, está página serve de teste, para os estudos de joão</h1>
-    <img class="eu" src="/EstudoLinguagem/img/eu.jpg" alt="Eu">
-    <p class="lineOne">Este é João, não se sinta intimidado por ele</p>
-    <p class="lineTwo">Ele está apenas tentando ganhar a vida como programador.</p>
-    <p class="lineOne">Mas agora vejamos um belo cachorro</p>
-    <img class="cachorro" src="/EstudoLinguagem/img/belaFoto.jpg" alt="cachorro">
-    <p class="lineThree">Agora, vejamos alguns de seus estudos</p>
-    <p class="titleBox">Execícios em JavaScript</p>
-    <button><a href="/EstudoLinguagem/HTML/@estudos.html">Entrar na página</a></button>
+        <h1>Exercícios <label>Dinâmicos</label></h1>
+        <div>
+                <button><a href="/Assets/Ex/lampada.html">Ligar / Desl Lampada</a></button>
+        </div>
 </body>
 
 </html>
