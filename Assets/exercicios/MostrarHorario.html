@@ -10,7 +10,7 @@
 
 <body>
     <h2>Olá aqui está um novo script</h2>
-    <button id="data">qual a data de hoje?</button>
+    <button onload="lookdate()" id="data">qual a data de hoje?</button>
     <p id="demo">Aqui estará a data e a hora de hoje</p>
     <p id="demo2">Aqui estará o mes</p>
 </body>
@@ -23,9 +23,8 @@
     btndata.addEventListener('click', lookdate)
 
     function lookdate() {
-
         texto.innerHTML = '<mark>' + Date() + '</mark><br>';
-        texto2.innerHTML = getMonth();
+        texto2.innerHTML = Month();
     }
 
 
