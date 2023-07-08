@@ -83,7 +83,13 @@
 
 @media(max-width: 500px) {
     .content_phone {
-        width: 99%;
+        background-color: rgba(255, 255, 255, 0);
+        box-shadow: none;
+    }
+
+    body.dark .content_phone {
+        background-color: rgba(255, 255, 255, 0);
+        box-shadow: none;
     }
 
     .title-principal {

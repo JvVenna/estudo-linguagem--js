@@ -229,9 +229,3 @@ h1:hover {
         padding: 30px 15px;
     }
 }
-
-@media(max-width: 375px) {
-    .icons {
-        left: 0px;
-    }
-}
