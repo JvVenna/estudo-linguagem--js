@@ -1,0 +1,126 @@
+@keyframes blink {
+    0% {
+        color: unset;
+    }
+
+    50% {
+        color: transparent;
+    }
+
+    100% {
+        color: unset;
+    }
+}
+
+@keyframes show-bottom {
+    0% {
+        margin-left: -20px;
+    }
+
+    100% {
+        margin-left: 0px;
+    }
+}
+
+@keyframes github {
+    0% {
+        color: lightgray;
+        background-color: rgb(255, 255, 255, 0);
+    }
+
+    50% {
+        color: var(--github);
+        background-color: rgb(255, 255, 255, 0);
+    }
+
+    100% {
+        color: lightgray;
+        background-color: rgb(255, 255, 255, 0);
+    }
+}
+
+@keyframes email {
+    0% {
+        color: lightgray;
+        background-color: rgb(255, 255, 255, 0);
+    }
+
+    50% {
+        color: var(--email);
+        background-color: rgb(255, 255, 255, 0);
+    }
+
+    100% {
+        color: lightgray;
+        background-color: rgb(255, 255, 255, 0);
+    }
+}
+
+@keyframes linkedin {
+    0% {
+        color: lightgray;
+        background-color: rgb(255, 255, 255, 0);
+    }
+
+    50% {
+        color: var(--linkedin);
+        background-color: rgb(255, 255, 255, 0);
+    }
+
+    100% {
+        color: lightgray;
+        background-color: rgb(255, 255, 255, 0);
+    }
+}
+
+@keyframes scale {
+    0% {
+        scale: 1;
+    }
+
+    50% {
+        scale: 1.2;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
+
+@keyframes react {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes moon {
+    0% {
+        color: #f1c401;
+    }
+
+    50% {
+        color: white;
+    }
+
+    100% {
+        color: #f1c401;
+    }
+}
+
+@keyframes sun {
+    0% {
+        color: #f39c12;
+    }
+
+    50% {
+        color: #f3d912;
+    }
+
+    100% {
+        color: #f39c12;
+    }
+}

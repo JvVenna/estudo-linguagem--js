@@ -1,0 +1,237 @@
+:root {
+    --phone-size: 200px;
+    --github: black;
+    --email: red;
+    --linkedin: royalblue;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+body {
+    background: linear-gradient(rgb(243, 243, 243) 40%, rgba(0, 212, 255, 0.5) 90%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* ------------------------------------------ICONES ESQUERDA------------------------------------------ */
+
+.icons {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    display: flex;
+    gap: 20px;
+    height: fit-content;
+    z-index: 2;
+}
+
+.fa-github, .fa-linkedin-square, .fa-envelope {
+    font-size: 30px;
+    color: lightgray;
+    background-color: darkgray;
+    padding: 5px 8px;
+    border-radius: 3px;
+}
+
+.fa-github {
+    animation: github 1s 2s ease-in-out;
+}
+
+.fa-linkedin-square {
+    animation: linkedin 1s 3s ease-in-out;
+}
+
+.fa-envelope {
+    animation: email 1s 4s ease-in-out;
+}
+
+.fa-github:hover, .fa-envelope:hover, .fa-linkedin-square:hover {
+    scale: 1.2;
+    transition: 0.2s;
+    background-color: transparent;
+}
+
+.fa-github:hover, .fa-github-alt:hover {
+    color: black;
+}
+
+
+.fa-linkedin-square:hover, .fa-linkedin:hover {
+    color: royalblue;
+}
+
+.fa-envelope:hover {
+    color: red;
+}
+
+.fa-github:active, .fa-envelope:active, .fa-linkedin-square:active {
+    animation: react 1s linear infinite;
+}
+
+/* --------------------ICONES DARK-------------------- */
+
+.dark .fa-github:hover {
+    color: black;
+}
+
+.dark .fa-github-alt:hover {
+    color: black;
+}
+
+.dark .fa-linkedin-square:hover {
+    color: royalblue;
+}
+
+.dark .fa-linkedin:hover {
+    color: royalblue;
+}
+
+.dark .fa-envelope:hover {
+    color: red;
+}
+
+/* ------------------------------------------DARK MODE------------------------------------------ */
+
+.toggle {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    background-color: lightgray;
+    border-radius: 50px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 5px;
+    position: relative;
+    width: 45px;
+
+    transform: scale(1.5);
+}
+
+.label .ball {
+    background-color: whitesmoke;
+
+
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+
+    height: 22px;
+    width: 22px;
+
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked+.label .ball {
+    transform: translateX(30px);
+}
+
+.fa-moon {
+    color: #f1c401;
+    animation: moon 3s linear infinite;
+}
+
+.fa-sun {
+    color: #f39c12;
+    animation: react 5s linear infinite, sun 5s infinite linear;
+}
+
+.label:hover .fa-sun {
+    animation: none;
+}
+
+.label:hover .fa-moon {
+    animation: none;
+}
+
+/* --------------------ESTILIZAÇÃO DARK-------------------- */
+
+body.dark {
+    background: linear-gradient(#232c35 40%, rgba(13, 38, 84) 100%);
+}
+
+body.dark .ball {
+    background-color: black;
+}
+
+body.dark .label {
+    background-color: darkgray;
+}
+
+body.dark h1 {
+    color: gray;
+}
+
+body.dark h2 {
+    color: white;
+}
+
+body.dark h3 {
+    color: lightgray;
+}
+
+.dark .fa {
+    color: gray;
+    background-color: transparent;
+}
+
+body.dark .content_phone {
+    background-color: #1a2027;
+}
+
+/* ------------------------------------------TITULO PRINCIPAL------------------------------------------ */
+
+.title-principal {
+    text-align: center;
+    margin: 50px 0;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    color: gray;
+    animation: show-bottom 0.5s linear;
+}
+
+h1 label {
+    color: royalblue;
+    animation: blink 0.5s 1s;
+}
+
+/* --------------------hover title-------------------- */
+
+h1:hover {
+    letter-spacing: 5px;
+    transition: 2s;
+}
+
+@media(max-width: 768px) {
+    h1 {
+        padding: 30px 15px;
+    }
+}
+
+@media(max-width: 375px) {
+    .icons {
+        left: 0px;
+    }
+}

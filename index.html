@@ -5,15 +5,41 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="Assets/css/style.css">
-        <link rel="stylesheet" href="Assets/css/index.css">
+        <link rel="stylesheet" href="Assets/css/index/index.css">
+        <link rel="stylesheet" href="Assets/css/index/footer.css">
+        <link rel="stylesheet" href="Assets/css/index/conteudo-principal.css">
+        <link rel="stylesheet" href="Assets/css/index/keyframes.css">
         <link rel="shortcut icon" href="/Assets/IMG/logo.ico" type="image/x-icon">
         <script defer src="./Assets/js/index.js"></script>
+        <script defer src="./script.js"></script>
+        <script defer src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+                integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+                crossorigin="anonymous" referrerpolicy="no-referrer" />
         <title>Exc JS || João</title>
 </head>
 
 <body>
-        <h1>Exercícios <label>Dinâmicos</label></h1>
+        <ul class="icons">
+                <li><a target="_blank" href="https://github.com/JvVenna?tab=repositories"><i
+                                        class="fa fa-github"></i></a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/in/jo%C3%A3o-victor-ven%C3%A2ncio-116092245/"><i
+                                        class=" fa fa-brands fa-linkedin-square"></i></a></li>
+                <li><a target="_blank" href="mailto:jv.venna@gmail.com?subject=&amp;body="><i
+                                        class="fa fa-envelope"></i></a>
+                </li>
+        </ul>
+        <h1 class="title-principal">Exercícios <label>Dinâmicos</label></h1>
+        <!-- <i class="fa-brands fa-github"></i> -->
+        <div class="toggle">
+                <input type="checkbox" class="checkbox" id="chk">
+
+                <label class="label" for="chk">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                        <div class="ball"></div>
+                </label>
+        </div>
         <div class="content_phone">
                 <div class="phone_1">
                         <a class="link_phone" target="_blank" href="">
@@ -25,7 +51,9 @@
                         <h3 class="subtitle"></h3>
                 </div>
                 <div class="phone_2">
-                        <a target="_blank" href="">
+                        <a class="link_phone_right" target="_blank" href="">
+                                <img class="phone_print_img" src="./Assets/IMG/print-relogio-digital.png"
+                                        alt="telefone">
                                 <img class="phone_img" src="./Assets/IMG/phone.png" alt="telefone">
                         </a>
                         <h2 class="title2"></h2>
@@ -33,5 +61,23 @@
                 </div>
         </div>
 </body>
+<footer>
+        <div class=border>
+                <ul>
+                        <li><a href="https://github.com/JvVenna?tab=repositories" target="_blank"><i
+                                                class="fa fa-github-alt"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/jv-developer-/" target="_blank"><i
+                                                class=" fa fa-linkedin"></i></a></li>
+                        <li><a href=cvPdf target="_blank"><i class="fa-regular fa-file"></i></a></li>
+                </ul>
+                <div class=textFooter>
+                        <h2>Copyright© 2023 |</h2>
+                        <h2 class="powered"> Powered by
+                                <a href="https://joao01.netlify.app/"><img class=logoFooter src="./Assets/IMG/logo.png"
+                                                alt="logo" /></a>
+                        </h2>
+                </div>
+        </div>
+</footer>
 
 </html>

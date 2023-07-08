@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #03152e;
+        color: white;
+    }
+
+    span {
+        font-family: fantasy;
+        font-size: 90px;
+        margin: 5px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    #hour,
+    #min,
+    #sec {
+        box-shadow: 0 0 15px 5px black;
+    }
+
+    @media (max-width: 500px) {
+        span {
+            font-size: 50px;
+            margin: 0;
+        }
+    }
+
+    @media (max-width:300px) {
+        span {
+            font-size: 40px;
+        }
+    }
+</style>
+
+<body>
+    <span id="hour">00</span>
+    <span>:</span>
+    <span id="min">00</span>
+    <span>:</span>
+    <span id="sec">00</span>
+</body>
+<script>
+    const hour = document.getElementById("hour")
+    const min = document.getElementById("min")
+    const sec = document.getElementById("sec")
+
+    setInterval(() => {
+        let date = new Date()//variavel para pegar o tempo atual
+        let dHour = date.getHours()//variavel acessando tempo atual armazenando horas
+        let dMin = date.getMinutes()//variavel acessando tempo atual armazenando minutos
+        let dSec = date.getSeconds()//variavel acessando tempo atual armazenando segundos
+
+        hour.innerHTML = `${formatTime(dHour)}`
+        min.innerHTML = `${formatTime(dMin)}`
+        sec.innerHTML = `${formatTime(dSec)}`
+
+    }, 1000);
+
+    function formatTime(time) {
+        return time
+            < 10 ? '0' + time : time
+    }
+</script>
+
+</html>
