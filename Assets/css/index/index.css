@@ -10,8 +10,8 @@
     margin: 0;
     list-style: none;
     text-decoration: none;
+    text-decoration: none;
 }
-
 
 body {
     background: linear-gradient(rgb(243, 243, 243) 40%, rgba(0, 212, 255, 0.5) 90%);
@@ -24,8 +24,61 @@ body {
 
 /* ------------------------------------------ICONES ESQUERDA------------------------------------------ */
 
+.return {
+    position: fixed;
+    left: -50px;
+    top: -100px;
+    width: 270px;
+    height: 220px;
+    border-bottom-right-radius: 40%;
+    background: radial-gradient(#5862BD 0%, #222222 100%);
+}
+
+
+.fa-house-home {
+    position: relative;
+    left: 10px;
+    top: 110px;
+    font-size: 30px;
+    color: gray;
+    opacity: 0;
+}
+
+.fa-show {
+    visibility: hidden;
+    display: none;
+}
+
+.return h1 {
+    font-size: 30px;
+    font-family: sans-serif;
+    position: relative;
+    left: 50px;
+    top: 80px;
+    color: white;
+    opacity: 0;
+}
+
+.dark .return h1 {
+    color: black;
+}
+
+.return:hover {
+    top: -50px;
+    left: 0px;
+    z-index: 3;
+    transition: all 0.5s;
+}
+
+.return:hover h1, .fa-solid {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+/* ------------------------------------------ICONES ESQUERDA------------------------------------------ */
+
 .icons {
-    position: absolute;
+    position: fixed;
     top: 20px;
     left: 10px;
     display: flex;
@@ -219,7 +272,7 @@ h1 label {
 
 /* --------------------hover title-------------------- */
 
-h1:hover {
+.title-principal:hover {
     letter-spacing: 5px;
     transition: 2s;
 }
@@ -227,5 +280,25 @@ h1:hover {
 @media(max-width: 768px) {
     h1 {
         padding: 30px 15px;
+    }
+
+    .return {
+        background: none;
+        display: none;
+    }
+
+    .fa-solid {
+        display: none;
+    }
+
+    .fa-show {color: gray;font-size: 30px;
+        position: absolute;
+        top: 22px;
+        right: 120px;
+        visibility: visible;
+    }
+
+    .return h1 {
+        visibility: hidden;
     }
 }
