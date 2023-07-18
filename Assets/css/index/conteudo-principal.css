@@ -10,16 +10,17 @@
     border-radius: 5px;
 }
 
-.phone_1, .phone_2 {
+.phone_1, .phone_2, .phone_3, .phone_4, .phone_5 {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 220px;
+    min-width: 50px;
+    max-width: 200px;
     margin: 20px 0;
 }
 
-.link_phone, .link_phone_right {
+.link_phone, .link_phone_right, .link_phone2, .link_phone3, .link_phone4, .link_phone5 {
     display: flex;
     align-items: center;
     width: fit-content;
@@ -36,12 +37,12 @@
     width: var(--phone-size);
 }
 
-.title, .title2 {
+.title, .title2,  .title3 {
     font-size: 20px;
     margin: 15px 0 10px 0;
 }
 
-.subtitle, .subtitle2 {
+.subtitle, .subtitle2. .subtitle3 {
     font-size: 15px;
     font-weight: 300;
 }
